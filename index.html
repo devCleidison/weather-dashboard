@@ -1,12 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/sun.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/cs/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="#">Weather</a>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Enter city name" />
+          <button class="icon-button">
+            <i class="bx bx-search"></i>
+          </button>
+        </div>
+      </header>
+
+      <section class="local-info-container">
+        <div class="bg-banner"></div>
+        <div class="info-container">
+          <div class="local-info">
+            <i class="bx bxs-sun"></i>
+            <span class="temp">13º</span>
+            <span class="city">Pacatuba, CE</span>
+          </div>
+          <div class="sunset-hour-container">
+            <span class="sunset-hout">7:50 pm</span>
+            <span class="sunset-info">Sunset time, Monday</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-day-container">
+        <div class="info-today">
+          <div class="weather-data">
+            <div class="data-container">
+              <i class="bx bx-droplet"></i>
+              <div class="data-content">
+                <span class="type">Humidity</span>
+                <span class="percentage">95%</span>
+              </div>
+            </div>
+            <div class="data-container">
+              <i class="bx bx-cloud-drizzle"></i>
+              <div class="data-content">
+                <span class="type">Rain</span>
+                <span class="percentage">5%</span>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div class="data-container">
+              <i class="bx bx-wind"></i>
+              <div class="data-content">
+                <span class="type">Wind Speed</span>
+                <span class="percentage">17Km/h</span>
+              </div>
+            </div>
+            <div class="data-container">
+              <i class="bx bx-sun"></i>
+              <div class="data-content">
+                <span class="type">Thermal Sensation</span>
+                <span class="percentage">30%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-monday-container">
+            <div class="info-monday">
+              <p>Monday Rainfall</p>
+              <span class="level-rainfall">45mm</span>
+            </div>
+            <div class="info-this-year">
+              <p>This year</p>
+              <span class="value-year">+ 17%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather-forecast">
+          <div class="day-container">
+            <span class="day">MON</span>
+            <i class="bx bx-sun"></i>
+            <span class="temp-day">13º</span>
+          </div>
+          <div class="day-container">
+            <span class="day">TUE</span>
+            <i class="bx bx-wind"></i>
+            <span class="temp-day">12º</span>
+          </div>
+          <div class="day-container">
+            <span class="day">WED</span>
+            <i class="bx bx-cloud"></i>
+            <span class="temp-day">12º</span>
+          </div>
+          <div class="day-container">
+            <span class="day">THU</span>
+            <i class="bx bx-cloud-lightning"></i>
+            <span class="temp-day">9º</span>
+          </div>
+          <div class="day-container">
+            <span class="day">FRI</span>
+            <i class="bx bx-cloud-drizzle"></i>
+            <span class="temp-day">7º</span>
+          </div>
+          <div class="day-container">
+            <span class="day">SAT</span>
+            <i class="bx bx-cloud"></i>
+            <span class="temp-day">10º</span>
+          </div>
+          <div class="day-container">
+            <span class="day">SUN</span>
+            <i class="bx bx-sun"></i>
+            <span class="temp-day">11º</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
