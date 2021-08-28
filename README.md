@@ -14,7 +14,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Funcionalidades
 
 
-
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
@@ -59,5 +58,20 @@ Para contribuir com o weather-dashboard, siga estas etapas:
 
 Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
+## 🤝 Inspiração
+
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.youtube.com/c/DesignSense">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLQ-aB06HhhA8J0VN0zd6hU-BTtcxtfm3D-cFarGLg=s88-c-k-c0x00ffffff-no-rj" width="100px;" alt="FOto do canal do Youtube do DesignSense"/><br>
+        <sub>
+          <b>DesignSense</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 [⬆ Voltar ao topo](#weather-dashboard)<br>
