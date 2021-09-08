@@ -1,7 +1,7 @@
 # weather-dashboard
 
 
-<img src="./assets/images/preview.png" alt="theme">
+<img src="./assets/images/preview.gif" alt="theme">
 
 > O projeto trata-se de uma dashboard do tempo. Nele, você será capaz de pesquisar por uma localidade e acompanhar a previsão do tempo. Esse projeto está sendo desenvolvido com as tecnologia <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>Javascript</strong>.
 
@@ -10,7 +10,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [X] Design
-- [ ] Resposividade
+- [X] Resposividade
 - [ ] Funcionalidades
 
 

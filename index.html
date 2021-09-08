@@ -10,124 +10,143 @@
       type="image/x-icon"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+
     <link rel="stylesheet" href="./assets/cs/style.css" />
-    <title>Weather Dashboard</title>
+    <title>Weather</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="logo">
-          <a href="#">Weather</a>
+    <header>
+      <a href="#" class="logo">Weather</a>
+      <div id="menu" class="menu-container">
+        <div id="toggleMenu" class="menu-content">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
         </div>
         <div class="search-container">
           <input type="text" placeholder="Enter city name" />
-          <button class="icon-button">
-            <i class="bx bx-search"></i>
+          <button>
+            <i class="ri-search-line"></i>
           </button>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <section class="local-info-container">
-        <div class="bg-banner"></div>
-        <div class="info-container">
+    <section class="banner-container">
+      <div class="banner"></div>
+      <div class="banner-content">
+        <div class="info-city-container">
+          <i class="ri-sun-fill"></i>
+          <span class="temp-city">29°</span>
+          <span class="city-name">Pacatuba, CE</span>
+        </div>
+
+        <div class="sunset-container">
+          <span class="sunset-hour">18h</span>
+          <span class="sunset-description">Pôr do sol, Domingo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="weather-container">
+      <div class="weather-content">
+        <div class="infos">
           <div class="local-info">
-            <i class="bx bxs-sun"></i>
-            <span class="temp">13º</span>
-            <span class="city">Pacatuba, CE</span>
-          </div>
-          <div class="sunset-hour-container">
-            <span class="sunset-hout">7:50 pm</span>
-            <span class="sunset-info">Sunset time, Monday</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="info-day-container">
-        <div class="info-today">
-          <div class="weather-data">
-            <div class="data-container">
-              <i class="bx bx-droplet"></i>
-              <div class="data-content">
-                <span class="type">Humidity</span>
-                <span class="percentage">95%</span>
-              </div>
-            </div>
-            <div class="data-container">
-              <i class="bx bx-cloud-drizzle"></i>
-              <div class="data-content">
-                <span class="type">Rain</span>
-                <span class="percentage">5%</span>
-              </div>
-            </div>
-            <span class="line"></span>
-            <div class="data-container">
-              <i class="bx bx-wind"></i>
-              <div class="data-content">
-                <span class="type">Wind Speed</span>
-                <span class="percentage">17Km/h</span>
-              </div>
-            </div>
-            <div class="data-container">
-              <i class="bx bx-sun"></i>
-              <div class="data-content">
-                <span class="type">Thermal Sensation</span>
-                <span class="percentage">30%</span>
-              </div>
+            <i class="ri-drop-line"></i>
+            <div class="info-description">
+              <p>Humidade</p>
+              <span class="humidity-value">24%</span>
             </div>
           </div>
-          <div class="info-monday-container">
-            <div class="info-monday">
-              <p>Monday Rainfall</p>
-              <span class="level-rainfall">45mm</span>
+          <div class="local-info">
+            <i class="ri-showers-line"></i>
+            <div class="info-description">
+              <p>Chuva</p>
+              <span class="rain-value">24%</span>
             </div>
-            <div class="info-this-year">
-              <p>This year</p>
-              <span class="value-year">+ 17%</span>
+          </div>
+          <div class="local-info">
+            <i class="ri-windy-line"></i>
+            <div class="info-description">
+              <p>Vento</p>
+              <span class="wind-value">26Km/h</span>
+            </div>
+          </div>
+          <div class="local-info">
+            <i class="ri-temp-hot-line"></i>
+            <div class="info-description">
+              <p>Sensação térmica</p>
+              <span class="sensation-value">34°</span>
             </div>
           </div>
         </div>
 
-        <div class="weather-forecast">
-          <div class="day-container">
-            <span class="day">MON</span>
-            <i class="bx bx-sun"></i>
-            <span class="temp-day">13º</span>
+        <div class="rainfall-container">
+          <div class="rainfall">
+            <span class="rainfall-day">Monday Rainfall</span>
+            <span class="rainfall-value">45mm</span>
           </div>
-          <div class="day-container">
-            <span class="day">TUE</span>
-            <i class="bx bx-wind"></i>
-            <span class="temp-day">12º</span>
-          </div>
-          <div class="day-container">
-            <span class="day">WED</span>
-            <i class="bx bx-cloud"></i>
-            <span class="temp-day">12º</span>
-          </div>
-          <div class="day-container">
-            <span class="day">THU</span>
-            <i class="bx bx-cloud-lightning"></i>
-            <span class="temp-day">9º</span>
-          </div>
-          <div class="day-container">
-            <span class="day">FRI</span>
-            <i class="bx bx-cloud-drizzle"></i>
-            <span class="temp-day">7º</span>
-          </div>
-          <div class="day-container">
-            <span class="day">SAT</span>
-            <i class="bx bx-cloud"></i>
-            <span class="temp-day">10º</span>
-          </div>
-          <div class="day-container">
-            <span class="day">SUN</span>
-            <i class="bx bx-sun"></i>
-            <span class="temp-day">11º</span>
+          <div class="year-container">
+            <p>This year</p>
+            <span class="percentage">+17%</span>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+
+      <div class="week-container">
+        <div class="temperature-day">
+          <span class="day">SEG</span>
+          <i class="ri-sun-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+        <div class="temperature-day">
+          <span class="day">TER</span>
+          <i class="ri-showers-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+        <div class="temperature-day">
+          <span class="day">QUA</span>
+          <i class="ri-thunderstorms-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+        <div class="temperature-day">
+          <span class="day">QUI</span>
+          <i class="ri-windy-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+        <div class="temperature-day">
+          <span class="day">SEX</span>
+          <i class="ri-cloudy-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+        <div class="temperature-day">
+          <span class="day">SAB</span>
+          <i class="ri-sun-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+        <div class="temperature-day">
+          <span class="day">DOM</span>
+          <i class="ri-sun-cloudy-line"></i>
+          <span class="day-value">26°</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/cleidison-silva/" target="_blank">
+        <i class="ri-linkedin-box-fill"></i>
+        <span class="social">LinkedIn</span>
+      </a>
+      <a href="https://github.com/devCleidison" target="_blank">
+        <i class="ri-github-fill"></i>
+        <span class="social">Github</span>
+      </a>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/menu.js"></script>
   </body>
 </html>
