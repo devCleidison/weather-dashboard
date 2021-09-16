@@ -169,7 +169,7 @@ header a {
   position: relative;
 }
 .banner-container .banner {
-  background-image: url(../images/mountains.svg);
+  background-image: url(../images/mountains.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
