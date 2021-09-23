@@ -8,6 +8,8 @@
   --color-bs: #5f68c63f;
   --color-white: #fff;
   --color-green: #47e57d;
+  --color-red: #e54750;
+  ;
 
   --font-thin: 300;
   --font-regular: 400;
@@ -328,8 +330,28 @@ header a {
   color: var(--color-primary);
 }
 .temperature-day .day-value {
-  font-weight: var(--font-extra-bold);
+  font-weight: var(--font-bold);
+  font-size: 1.8rem;
+}
+.day-value-container{
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+.day-container-up, .day-container-down{
+  display: flex;
+  align-items: center;
+}
+.day-container-up i, .day-container-down i{
   font-size: 2rem;
+  margin: .4rem;
+}
+.day-container-up i{
+  color: var(--color-red);
+}
+.day-container-down i{
+  color: var(--color-green);
 }
 
 footer{
@@ -465,6 +487,21 @@ footer a{
   }
 }
 
+@media (max-width: 520px){
+  .day{
+    font-size: 1.5rem;
+  }
+  .temperature-day i {
+    font-size: 2rem;
+  }
+  .temperature-day .day-value {
+    font-size: 1.5rem;
+  }
+  .day-container-up i, .day-container-down i{
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 480px) {
   header {
     position: static;
@@ -539,6 +576,19 @@ footer a{
   .menu-container.on .search-container button i {
     font-size: 2rem;
   }
+
+  .day{
+    font-size: 1.3rem;
+  }
+  .temperature-day i {
+    font-size: 2rem;
+  }
+  .temperature-day .day-value {
+    font-size: 1.4rem;
+  }
+  .day-container-up i, .day-container-down i{
+    font-size: 1.6rem;
+  }
 }
 @media (max-width: 375px) {
   .banner-content {
@@ -583,6 +633,20 @@ footer a{
   .infos {
     gap: .5rem;
     padding: 1.2rem;
+  }
+
+  .day{
+    font-size: 1.2rem;
+  }
+  .temperature-day i {
+    font-size: 1.8rem;
+  }
+  .temperature-day .day-value {
+    font-size: 1.3rem;
+  }
+  .day-container-up i, .day-container-down i{
+    font-size: 1.5rem;
+    margin: .2rem;
   }
 }
 
@@ -634,16 +698,23 @@ footer a{
     gap: 2rem;
     padding: 4rem;
   }
+  .day{
+    font-size: 1.6rem;
+  }
   .temperature-day{
     display: flex;
     flex-direction: row;
   }
   .temperature-day i {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .temperature-day .day-value {
     font-weight: var(--font-extra-bold);
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .day-container-up i, .day-container-down i{
+    font-size: 1.7rem;
+    margin: .4rem;
   }
 }
 
