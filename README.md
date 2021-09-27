@@ -21,8 +21,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Navegador `<Google Chrome / Firefox / Microsoft Edge>`
 * Extensão `<CORS Unblock>`
 
-## 🚀 Instalando o Moesif CORS
-Vá na loja de extensões do seu navegador e pesquise por Moesif e instale (Ele irá permitir acesso a api de clima - OpenWeather)
+## 🚀 Instalando o CORS Unblock
+Vá na loja de extensões do seu navegador, pesquise por CORS Unblock e instale (Ele irá permitir acesso a api de clima - OpenWeather)
 
 ## 🚀 Instalando o weather-dashboard
 
