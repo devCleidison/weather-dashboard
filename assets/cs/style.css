@@ -9,8 +9,6 @@
   --color-white: #fff;
   --color-green: #47e57d;
   --color-red: #e54750;
-  ;
-
   --font-thin: 300;
   --font-regular: 400;
   --font-bold: 500;
@@ -32,7 +30,7 @@ body {
 
   font-family: var(--font);
 }
-a{
+a {
   text-decoration: none;
 }
 
@@ -337,26 +335,27 @@ header a {
   font-weight: var(--font-bold);
   font-size: 1.8rem;
 }
-.day-value-container{
+.day-value-container {
   display: flex;
   flex-direction: column;
 }
-.day-container{
+.day-container {
   display: flex;
   align-items: center;
 }
-.ri-arrow-up-line.up, .ri-arrow-down-line.down{
+.ri-arrow-up-line.up,
+.ri-arrow-down-line.down {
   font-size: 2rem;
-  margin: 1rem .4rem;
+  margin: 1rem 0.4rem;
 }
-.ri-arrow-up-line.up{
+.ri-arrow-up-line.up {
   color: var(--color-red);
 }
-.ri-arrow-down-line.down{
+.ri-arrow-down-line.down {
   color: var(--color-green);
 }
 
-footer{
+footer {
   width: 100%;
   text-align: center;
   display: flex;
@@ -365,11 +364,11 @@ footer{
 
   padding-bottom: 4rem;
 }
-footer a{
+footer a {
   display: flex;
   align-items: center;
-  
-  column-gap: .8rem;
+
+  column-gap: 0.8rem;
 
   font-size: 1.7rem;
 
@@ -436,7 +435,7 @@ footer a{
 
     height: 200px;
   }
-  .infos{
+  .infos {
     justify-content: space-around;
   }
   .rainfall-container {
@@ -493,8 +492,8 @@ footer a{
   }
 }
 
-@media (max-width: 520px){
-  .day{
+@media (max-width: 520px) {
+  .day {
     font-size: 1.5rem;
   }
   .temperature-day i {
@@ -503,7 +502,8 @@ footer a{
   .temperature-day .day-value {
     font-size: 1.5rem;
   }
-  .day-container-up i, .day-container-down i{
+  .day-container-up i,
+  .day-container-down i {
     font-size: 1.6rem;
   }
 }
@@ -583,7 +583,7 @@ footer a{
     font-size: 2rem;
   }
 
-  .day{
+  .day {
     font-size: 1.2rem;
   }
   .temperature-day i {
@@ -592,9 +592,10 @@ footer a{
   .temperature-day .day-value {
     font-size: 1.3rem;
   }
-  .day-container-up i, .day-container-down i{
+  .day-container-up i,
+  .day-container-down i {
     font-size: 1.5rem;
-    margin: .2rem;
+    margin: 0.2rem;
   }
 
   .week-container {
@@ -625,7 +626,7 @@ footer a{
   .sunset-container .sunset-description {
     font-size: 2rem;
   }
-  
+
   .sunset-container .sunset-hour {
     font-size: 2.5rem;
     font-weight: var(--font-bold);
@@ -642,18 +643,19 @@ footer a{
     height: 0.3rem;
   }
   .infos {
-    gap: .3rem;
+    gap: 0.3rem;
     padding: 1.2rem;
   }
 
-  .day-container-up i, .day-container-down i{
+  .day-container-up i,
+  .day-container-down i {
     padding: 0;
     margin: 0;
   }
 }
 
 @media (max-width: 320px) {
-  .menu-container.on{
+  .menu-container.on {
     overflow-y: auto;
   }
   .info-city-container i {
@@ -667,7 +669,7 @@ footer a{
   .sunset-container .sunset-description {
     font-size: 1.5rem;
   }
-  
+
   .sunset-container .sunset-hour {
     font-size: 2.4rem;
     font-weight: var(--font-bold);
@@ -677,7 +679,7 @@ footer a{
     height: 100%;
   }
 
-  .infos{
+  .infos {
     display: flex;
     flex-direction: column;
   }
@@ -686,7 +688,7 @@ footer a{
     padding: 1rem;
   }
 
-  .rainfall-container {  
+  .rainfall-container {
     margin-bottom: 2rem;
     padding: 1.8rem;
   }
@@ -699,12 +701,14 @@ footer a{
     gap: 2rem;
     padding: 4rem;
   }
-  .day{
+  .day {
     font-size: 1.6rem;
   }
-  .temperature-day{
-    display: flex;
-    flex-direction: row;
+  .temperature-day {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    
+    text-align: center;
   }
   .temperature-day i {
     font-size: 2rem;
@@ -713,9 +717,10 @@ footer a{
     font-weight: var(--font-extra-bold);
     font-size: 1.5rem;
   }
-  .day-container-up i, .day-container-down i{
+  .day-container-up i,
+  .day-container-down i {
     font-size: 1.7rem;
-    margin: .4rem;
+    margin: 0.4rem;
   }
 }
 

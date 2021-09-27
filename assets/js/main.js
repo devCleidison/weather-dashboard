@@ -18,8 +18,8 @@ async function getLocation(position) {
 }
 
 async function getInfo() {
-  document.getElementById('menu').classList.remove('on')
-  document.body.style.overflow = 'initial'
+  document.getElementById("menu").classList.remove("on");
+  document.body.style.overflow = "initial";
 
   const cityName = document.getElementById("input-city").value;
 
@@ -41,9 +41,8 @@ async function getInfo() {
 }
 
 async function setInfoView(res) {
-  let dayIcon = document.getElementById('icon-day')
+  let dayIcon = document.getElementById("icon-day");
   dayIcon.classList.add(`${getConditionBanner(res.results.condition_slug)}`);
-
 
   document.getElementById("week-container").innerHTML = "";
   document.getElementById("temp-city").innerHTML =
@@ -61,7 +60,7 @@ async function setInfoView(res) {
 
     let weekDay = document.createElement("span");
     weekDay.classList.add("day");
-    weekDay.innerHTML = forecast[i].weekday;
+    weekDay.innerHTML = getWeekday(forecast[i].weekday);
 
     container.appendChild(weekDay);
 
@@ -137,5 +136,26 @@ function getConditionBanner(condition) {
       return "ri-cloudy-fill";
     case "clear_day":
       return "ri-sun-fill";
+  }
+}
+
+function getWeekday(day) {
+  switch (day) {
+    case "Seg":
+      return "Mon";
+    case "Ter":
+      return "Tue";
+    case "Qua":
+      return "Wed";
+    case "Qui":
+      return "Thu";
+    case "Sex":
+      return "Fri";
+    case "Sáb":
+      return "Sat";
+    case "Dom":
+      return "Sun";
+    default:
+      return day;
   }
 }

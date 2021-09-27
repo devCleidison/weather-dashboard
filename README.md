@@ -11,7 +11,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [X] Design
 - [X] Resposividade
-- [ ] Funcionalidades
+- [X] Funcionalidades
 
 
 ## 💻 Pré-requisitos
@@ -19,7 +19,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 * Navegador `<Google Chrome / Firefox / Microsoft Edge>`
+* Extensão `<Moesif CORS>`
 
+## 🚀 Instalando o Moesif CORS
+Vá na loja de extensões do seu navegador e pesquise por Moesif e instale (Ele irá permitir acesso a api de clima - OpenWeather)
 
 ## 🚀 Instalando o weather-dashboard
 
@@ -42,6 +45,8 @@ Para usar o weather-dashboard, siga estas etapas:
 ```
 Abra a pasta do projeto e execute o arquivo index.html dando 2 cliques
 ```
+
+Após, basta permitir acesso a sua localização
 
 ## 🚀 Quer testar antes?
 * [Clique aqui!](https://devcleidison-weather-dashboard.netlify.app/)
