@@ -27,8 +27,8 @@
           <div class="three"></div>
         </div>
         <div class="search-container">
-          <input type="text" placeholder="Ex: Pacatuba, CE" />
-          <button>
+          <input id="input-city" type="text" placeholder="Ex: Pacatuba, CE" />
+          <button onclick="getInfo()">
             <i class="ri-search-line"></i>
           </button>
         </div>
@@ -39,14 +39,14 @@
       <div class="banner"></div>
       <div class="banner-content">
         <div class="info-city-container">
-          <i class="ri-sun-fill"></i>
-          <span class="temp-city">29°</span>
-          <span class="city-name">Pacatuba, CE</span>
+          <i id="icon-day" class=""></i>
+          <span id="temp-city" class="temp-city">--</span>
+          <span id="city-name" class="city-name">--</span>
         </div>
 
         <div class="sunset-container">
-          <span class="sunset-hour">18h</span>
-          <span class="sunset-description">Pôr do sol, Domingo</span>
+          <span id="sunset-hour" class="sunset-hour">--</span>
+          <span class="sunset-description">Sunset time</span>
         </div>
       </div>
     </section>
@@ -57,34 +57,34 @@
           <div class="local-info">
             <i class="ri-drop-line"></i>
             <div class="info-description">
-              <p>Humidade</p>
-              <span class="humidity-value">24%</span>
+              <p>Humidity</p>
+              <span id="humidity" class="humidity-value">--</span>
             </div>
           </div>
-          <div class="local-info">
+          <!-- <div class="local-info">
             <i class="ri-showers-line"></i>
             <div class="info-description">
               <p>Chuva</p>
               <span class="rain-value">24%</span>
             </div>
-          </div>
+          </div> -->
           <div class="local-info">
             <i class="ri-windy-line"></i>
             <div class="info-description">
-              <p>Vento</p>
-              <span class="wind-value">26Km/h</span>
+              <p>Wind</p>
+              <span id="wind" class="wind-value">--</span>
             </div>
           </div>
-          <div class="local-info">
+          <!-- <div class="local-info">
             <i class="ri-temp-hot-line"></i>
             <div class="info-description">
               <p>Sensação térmica</p>
               <span class="sensation-value">34°</span>
             </div>
-          </div>
+          </div> -->
         </div>
 
-        <div class="rainfall-container">
+        <!-- <div class="rainfall-container">
           <div class="rainfall">
             <span class="rainfall-day">Monday Rainfall</span>
             <span class="rainfall-value">45mm</span>
@@ -93,108 +93,24 @@
             <p>This year</p>
             <span class="percentage">+17%</span>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="week-container">
-        <div class="temperature-day">
-          <span class="day">SEG</span>
+      <div id="week-container" class="week-container">
+        <!-- <div class="temperature-day">
+          <span class="day"></span>
           <i class="ri-sun-line"></i>
           <div class="day-value-container">
-            <div class="day-container-up">
+            <div class="day-container">
               <i class="ri-arrow-up-line"></i>
               <span class="day-value">26°</span>
             </div>
-            <div class="day-container-down">
+            <div class="day-container">
               <i class="ri-arrow-down-line"></i>
               <span class="day-value">26°</span>
             </div>
           </div>
-        </div>
-        <div class="temperature-day">
-          <span class="day">TER</span>
-          <i class="ri-showers-line"></i>
-          <div class="day-value-container">
-            <div class="day-container-up">
-              <i class="ri-arrow-up-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-            <div class="day-container-down">
-              <i class="ri-arrow-down-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-          </div>
-        </div>
-        <div class="temperature-day">
-          <span class="day">QUA</span>
-          <i class="ri-thunderstorms-line"></i>
-          <div class="day-value-container">
-            <div class="day-container-up">
-              <i class="ri-arrow-up-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-            <div class="day-container-down">
-              <i class="ri-arrow-down-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-          </div>
-        </div>
-        <div class="temperature-day">
-          <span class="day">QUI</span>
-          <i class="ri-windy-line"></i>
-          <div class="day-value-container">
-            <div class="day-container-up">
-              <i class="ri-arrow-up-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-            <div class="day-container-down">
-              <i class="ri-arrow-down-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-          </div>
-        </div>
-        <div class="temperature-day">
-          <span class="day">SEX</span>
-          <i class="ri-cloudy-line"></i>
-          <div class="day-value-container">
-            <div class="day-container-up">
-              <i class="ri-arrow-up-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-            <div class="day-container-down">
-              <i class="ri-arrow-down-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-          </div>
-        </div>
-        <div class="temperature-day">
-          <span class="day">SAB</span>
-          <i class="ri-sun-line"></i>
-          <div class="day-value-container">
-            <div class="day-container-up">
-              <i class="ri-arrow-up-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-            <div class="day-container-down">
-              <i class="ri-arrow-down-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-          </div>
-        </div>
-        <div class="temperature-day">
-          <span class="day">DOM</span>
-          <i class="ri-sun-cloudy-line"></i>
-          <div class="day-value-container">
-            <div class="day-container-up">
-              <i class="ri-arrow-up-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-            <div class="day-container-down">
-              <i class="ri-arrow-down-line"></i>
-              <span class="day-value">26°</span>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
