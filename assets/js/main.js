@@ -1,4 +1,4 @@
-const key = "6d5c6c88";
+const key = "dde86fe6";
 const baseUrl = "https://api.hgbrasil.com/weather?";
 
 let myLocation = {
